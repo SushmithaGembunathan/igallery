@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="igalcss.css">
+</head>
+<body>
+  
+  <!-- Gallery Heading -->
+  <h1 class="gallery-heading">Interactive Image Gallery</h1>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="p8.jpg" alt="Ganga Aarti ceremony on the river" class="gallery-img" tabindex="0">
+      <div class="image-name">Ganga Aarti</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p1.jpg" alt="Colorful macroons stacked on a plate" class="gallery-img" tabindex="0">
+      <div class="image-name">Macroons</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p3.jpg" alt="A cute dog sitting on grass" class="gallery-img" tabindex="0">
+      <div class="image-name">Dog</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p4.jpg" alt="SpongeBob character illustration" class="gallery-img" tabindex="0">
+      <div class="image-name">SpongeBob</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p5.jpg" alt="A creative map design illustration" class="gallery-img" tabindex="0">
+      <div class="image-name">Map Design</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p2.jpg" alt="Sydney cityscape with the Opera House" class="gallery-img" tabindex="0">
+      <div class="image-name">Sydney</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p7.jpg" alt="A daisy flower in a garden" class="gallery-img" tabindex="0">
+      <div class="image-name">Daisy</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p9.jpg" alt="Jal Mahal palace surrounded by water" class="gallery-img" tabindex="0">
+      <div class="image-name">Jal Mahal</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p6.jpg" alt="A serene sunset view over mountains" class="gallery-img" tabindex="0">
+      <div class="image-name">Sunset</div>
+    </div>
+    <div class="gallery-item">
+      <img src="p10.jpg" alt="The Meluha book cover with a scenic backdrop" class="gallery-img" tabindex="0">
+      <div class="image-name">Meluha Book</div>
+    </div>
+  </div>
+
+  <!-- Modal for Enlarged Image -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true">
+    <span class="close-btn" onclick="closeModal()" tabindex="0" aria-label="Close modal">&times;</span>
+    <img id="modal-img" src="" alt="Enlarged view of the selected image">
+  </div>
+
+  <script src="igaljs.js"></script>
+</body>
+</html>
